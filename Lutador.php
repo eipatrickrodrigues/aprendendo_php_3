@@ -16,12 +16,12 @@ class Lutador {
     // Métodos
     public function apresentar(){
         echo "<p>-----------------------------</p>";
-        echo "Lutador: ".$this->getNome();
-        echo "Origem: ".$this->getNacionalidade();
-        echo "Idade: ".$this->getIdade();
-        echo "Altura: ".$this->getAltura();
-        echo "Pesando: ".$this->getPeso()." kg";
-        echo "Vit: ".$this->getVitorias()."/ Der: ".$this->getDerrotas()."/ Emp: ".$this->getEmpates();
+        echo "<br>Lutador: ".$this->getNome();
+        echo "<br>Origem: ".$this->getNacionalidade();
+        echo "<br>Idade: ".$this->getIdade();
+        echo "<br>Altura: ".$this->getAltura();
+        echo "<br>Pesando: ".$this->getPeso()." kg";
+        echo "<br>Vit: ".$this->getVitorias()."/ Der: ".$this->getDerrotas()."/ Emp: ".$this->getEmpates();
     }
     public function status(){
         echo "<p>-----------------------------</p>";
@@ -55,23 +55,23 @@ class Lutador {
 
     public function setNome($nome)
     {
-        $this->setNome($nome);
+        $this->nome = $nome;
     }
     public function setNacionalidade($nacionalidade)
     {
-        $this->setNacionalidade($nacionalidade);
+        $this->nacionalidade = $nacionalidade;
     }
     public function setIdade($idade)
     {
-        $this->setIdade($idade);
+        $this->idade = $idade;
     }
     public function setAltura($altura)
     {
-        $this->setAltura($altura);
+        $this->altura = $altura;
     }
     public function setPeso($peso)
     {
-        $this->setPeso($peso);
+        $this->peso = $peso;
         $this->setCategoria();
     }
     public function setCategoria()
@@ -90,7 +90,7 @@ class Lutador {
     }
     public function setVitorias($vitorias)
     {
-        $this->$vitorias = $vitorias;
+        $this->vitorias = $vitorias;
     }
     public function setDerrotas($derrotas)
     {

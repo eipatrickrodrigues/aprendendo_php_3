@@ -10,6 +10,7 @@
     <pre>
     <?php 
     require_once 'Lutador.php';
+    require_once 'Luta.php';
 
     $lutador = array();
     $lutador[0] = new Lutador("Patrick","Brasil",24,1.84,80,0,10,2);
@@ -19,8 +20,11 @@
     $lutador[4] = new Lutador("Mathew", "Canadá", 33,1.60,80,12,12,21);
     $lutador[5] = new Lutador("Abuh", "Índia",32,1.73,76,2,2,1);
 
-    
-    $lutador[0]->status();
+    $luta1 = new Luta();
+    $luta1->marcarLuta($lutador[1],$lutador[3]);
+    $luta1->lutar();
+    $lutador[1]->status();
+    $lutador[3]->status();
 
 
 
